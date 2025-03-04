@@ -9,7 +9,7 @@ function QueryInterface() {
     setError(null);
     setResult(null);
     try {
-      const response = await fetch("https://flask-app-production-de06.up.railway.app/query", {
+      const response = await fetch("http://flask-app-production-de06.up.railway.app/query", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ query }),
